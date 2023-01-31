@@ -7,12 +7,13 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 
-class cartoon(private val mList: List<String>) : RecyclerView.Adapter<cartoon.ViewHolder>() {
+class CartoonAdapter(private val mList: List<String>) : RecyclerView.Adapter<com.example.lab4_josephchan.cartoon.CartoonAdapter.ViewHolder>() {
 
     // Holds the views
-    class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
-        //val textView: TextView = itemView.findViewById(R.id.textView) 
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val textView = view.findViewById<TextView>(R.id.textView)
     }
+
 
     // create new views
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
