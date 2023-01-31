@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/textView_main"
+        android:id="@+id/text_cartoon_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -16,7 +16,7 @@
         android:textSize="30sp" />
 
     <ImageView
-        android:id="@+id/imageView_main"
+        android:id="@+id/image_cartoon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:srcCompat="@drawable/spongebob" />
